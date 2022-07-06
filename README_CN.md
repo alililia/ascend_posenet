@@ -96,13 +96,6 @@ PoseNet是剑桥大学提出的一种鲁棒、实时的6DOF（单目六自由度
 
 
 
-  ```python
-  # 运行单机训练示例
-
-  # 运行分布式训练示例
-
-  # 运行评估示例
-  ```
 
 默认使用KingsCollege数据集。您也可以将`$dataset_name`传入脚本，以便选择其他数据集。如需查看更多详情，请参考指定脚本。
 
@@ -183,20 +176,7 @@ PoseNet是剑桥大学提出的一种鲁棒、实时的6DOF（单目六自由度
   模型检查点保存在checkpoint文件夹下。
 
 
-  ```bash
-  ```
-
-  上述python命令将在后台运行，您可以通过train.log文件查看结果。
-
-  训练结束后，您可在默认脚本文件夹下找到检查点文件。采用以下方式得到损失值：
-
-  ```bash
-  epoch:1 step:38, loss is 1722.1506
-  epcoh:2 step:38, loss is 1671.5763
-  ...
-  ```
-
-  模型检查点保存在checkpoint文件夹下。
+  
 
 ### 分布式训练
 
@@ -218,19 +198,6 @@ PoseNet是剑桥大学提出的一种鲁棒、实时的6DOF（单目六自由度
   ```
 
 
-  ```bash
-  ```
-
-  上述shell脚本将在后台运行分布训练。您可以通过device[X]/log文件查看结果。采用以下方式达到损失值：
-
-  ```bash
-  device0/log:epoch:1 step:38, loss is 1722.1506
-  device0/log:epcoh:2 step:38, loss is 1671.5763
-  ...
-  device1/log:epoch:1 step:38, loss is 1722.1506
-  device1/log:epcoh:2 step:38, loss is 1671.5763
-  ...
-  ```
 
 ## 评估过程
 
@@ -252,17 +219,7 @@ PoseNet是剑桥大学提出的一种鲁棒、实时的6DOF（单目六自由度
   ```
 
 
-  在运行以下命令之前，请检查用于评估的检查点路径。
-  请将检查点路径设置为相对路径，例如“../checkpoint/train_posenet_KingsCollege-1875_2.ckpt”。
-
-  ```bash
-  ```
-
-  上述python命令将在后台运行，您可以通过eval/eval.log文件查看结果。测试数据集的准确性如下：
-
-  ```bash
-  Median error  3.56644630432129 m  and  3.07089155413442 degrees
-  ```
+  
 
 ## 导出过程
 
