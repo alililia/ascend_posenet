@@ -267,66 +267,70 @@ result_path 为输出路径。
 
 #### KingsCollege上的PoseNet
 
-| -------------------------- | ----------------------------------------------------------- | ---------------------- |
-| 资源                   | Ascend 910 ；CPU 2.60GHz，192核；内存：755G             | NV SMX2 V100-32G       |
-| 上传日期              | 2021-03-26                                 | 2021-05-20 |
-| MindSpore版本          | 1.1.1                                                 | 1.2.1            |
-| 数据集                    | KingsCollege                                                    | KingsCollege               |
-| 训练参数        | max_steps=30000, batch_size=75, lr_init=0.001              | max_steps=30000, batch_size=75, lr_init=0.001      |
-| 优化器                  | Adagrad                                                    | Adagrad      |
-| 损失函数              | 自定义损失函数                                       | 自定义损失函数       |
-| 输出                    | 距离、角度                                                 | 距离、角度       |
-| 损失                       | 1110.86                                                      | 1110.86       |
-| 速度                      | 单卡：750毫秒/步;  8卡：856毫秒/步                          | 8卡：675毫秒/步（不稳定）    |
-| 总时长                 | 8卡：75分钟                          | 8卡：60分钟   |
-| 参数(M)             | 10.7                                                        | 10.7                   |
-| 微调检查点 | 82.91M (.ckpt文件)                                         | 82.91M (.ckpt文件)                |
-| 推理模型        | 41.66M (.mindir文件)                     | 41.66M (.mindir文件)                 |
-| 脚本                    | <https://gitee.com/mindspore/models/tree/master/official/cv/posenet> | <https://gitee.com/mindspore/models/tree/master/official/cv/posenet> |
+| 参数                 | Ascend                                                      | 
+| -------------------------- | ----------------------------------------------------------- | 
+| 资源                   | Ascend 910 ；CPU 2.60GHz，192核；内存：755G             |
+| 上传日期              | 2021-03-26                                 | 
+| MindSpore版本          | 1.1.1                                                 | 
+| 数据集                    | KingsCollege                                                    | 
+| 训练参数        | max_steps=30000, batch_size=75, lr_init=0.001              | 
+| 优化器                  | Adagrad                                                    | 
+| 损失函数              | 自定义损失函数                                       | 
+| 输出                    | 距离、角度                                                 |
+| 损失                       | 1110.86                                                      |
+| 速度                      | 单卡：750毫秒/步;  8卡：856毫秒/步                          | 
+| 总时长                 | 8卡：75分钟                          | 
+| 参数(M)             | 10.7                                                        |
+| 微调检查点 | 82.91M (.ckpt文件)                                         | 
+| 推理模型        | 41.66M (.mindir文件)                     | 
+| 脚本                    | <https://gitee.com/mindspore/models/tree/master/official/cv/posenet> |
 
 #### StMarysChurch上的PoseNet
 
-| -------------------------- | ----------------------------------------------------------- | ---------------------- |
-| 资源                   | Ascend 910 ；CPU 2.60GHz，192核；内存：755G             | NV SMX2 V100-32G       |
-| 上传日期              | 2021-03-26                                 | 2021-05-20 |
-| MindSpore版本          | 1.1.1                                                 | 1.2.1            |
-| 数据集                    | StMarysChurch                                                    | StMarysChurch               |
-| 训练参数        | max_steps=30000, batch_size=75, lr_init=0.001              | max_steps=30000, batch_size=75, lr_init=0.001      |
-| 优化器                  | Adagrad                                                    | Adagrad      |
-| 损失函数              | 自定义损失函数                                       | 自定义损失函数       |
-| 输出                    | 距离、角度                                                 | 距离、角度       |
-| 损失                       | 1077.86                                                      | 1023.67       |
-| 速度                      | 单卡：800毫秒/步;  8卡：1122毫秒/步                          | 8卡：850毫秒/步（不稳定）   |
-| 总时长                 | 单卡：6小时40分钟;  8卡：85分钟                          | 8卡：80分钟   |
-| 参数(M)             | 10.7                                                        | 10.7                   |
-| 微调检查点 | 82.91M (.ckpt文件)                                         | 82.91M (.ckpt文件)                |
-| 推理模型        | 41.66M (.mindir文件)                     | 41.66M (.mindir文件)                 |
-| 脚本                    | [posenet脚本](https://gitee.com/mindspore/models/tree/master/official/cv/posenet) | [posenet脚本](https://gitee.com/mindspore/models/tree/master/official/cv/posenet) |
+| 参数                 | Ascend                                                      | 
+| -------------------------- | ----------------------------------------------------------- | 
+| 资源                   | Ascend 910 ；CPU 2.60GHz，192核；内存：755G             | 
+| 上传日期              | 2021-03-26                                 |
+| MindSpore版本          | 1.1.1                                                 | 
+| 数据集                    | StMarysChurch                                                    | 
+| 训练参数        | max_steps=30000, batch_size=75, lr_init=0.001              |
+| 优化器                  | Adagrad                                                    | 
+| 损失函数              | 自定义损失函数                                       | 
+| 输出                    | 距离、角度                                                 | 
+| 损失                       | 1077.86                                                      | 
+| 速度                      | 单卡：800毫秒/步;  8卡：1122毫秒/步                          | 
+| 总时长                 | 单卡：6小时40分钟;  8卡：85分钟                          | 
+| 参数(M)             | 10.7                                                        | 
+| 微调检查点 | 82.91M (.ckpt文件)                                         | 
+| 推理模型        | 41.66M (.mindir文件)                     | 
+| 脚本                    | [posenet脚本](https://gitee.com/mindspore/models/tree/master/official/cv/posenet) |
 
 ### 推理性能
 
 #### KingsCollege上的PoseNet
 
-| ------------------- | --------------------------- | --------------------------- |
-| 上传日期       | 2021-03-26 | 2021-05-20 |
-| MindSpore 版本   | 1.1.1                 | 1.2.1            |
-| 数据集             | KingsCollege     | KingsCollege               |
-| batch_size          | 1                         | 1                         |
-| 输出             | 距离、角度                 |距离、角度                 |
-| 准确性            | 单卡: 1.928米 4.24度;  8卡：1.89米 4.31度   | 8卡：1.80米 3.68度   |
-| 推理模型 | 41.66M (.mindir文件)         | 41.66M (.mindir文件)         |
-
+| 参数          | Ascend                      | 
+| ------------------- | --------------------------- | 
+| 资源            | Ascend 910                  | 
+| 上传日期       | 2021-03-26 | 
+| MindSpore 版本   | 1.1.1                 |
+| 数据集             | KingsCollege     | 
+| batch_size          | 1                         | 
+| 输出             | 距离、角度                 |
+| 准确性            | 单卡: 1.928米 4.24度;  8卡：1.89米 4.31度   |
+| 推理模型 | 41.66M (.mindir文件)         |
 #### StMarysChurch上的PoseNet
 
-| ------------------- | --------------------------- | --------------------------- |
-| 上传日期       | 2021-03-26 | 2021-05-20 |
-| MindSpore 版本   | 1.1.1                 | 1.2.1            |
-| 数据集             | StMarysChurch     | StMarysChurch     |
-| batch_size          | 1                         | 1                         |
-| 输出             | 距离、角度                 | 距离、角度                 |
-| 准确性            | 单卡: 1.884米 7.20度;  8卡：1.90米 6.23度   | 8卡：1.89米 6.24度   |
-| 推理模型 | 41.66M (.mindir文件)         | 41.66M (.mindir文件)         |
-
+| 参数          | Ascend                      | 
+| ------------------- | --------------------------- | 
+| 资源            | Ascend 910                  | 
+| 上传日期       | 2021-03-26 | 
+| MindSpore 版本   | 1.1.1                 | 
+| 数据集             | StMarysChurch     | 
+| batch_size          | 1                         |
+| 输出             | 距离、角度                 | 
+| 准确性            | 单卡: 1.884米 7.20度;  8卡：1.90米 6.23度   |
+| 推理模型 | 41.66M (.mindir文件)         | 
 ## 迁移学习
 
 在Imagenet数据集上预训练GoogLeNet，迁移至PoseNet。
